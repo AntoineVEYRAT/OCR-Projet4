@@ -1,16 +1,20 @@
 /* 
 	-- GENERAL -- 
 */
-h2 {
-	font-family: 'Ma Shan Zheng', cursive;
-}
-
 .white {
 	color:white;
 }
 
 a {
 	text-decoration: none;
+}
+
+header h2 {
+	font-family: 'Patrick Hand', cursive;
+}
+
+h3 {
+	font-size: 0.9em;
 }
 /* ################################################################################### */
 /* 
@@ -33,10 +37,11 @@ a {
 }
 
 .img-biographie {
-	max-height: 200px;
+	max-height: 700px;
 }
-.img-biographie img{
-	width:150px;
+
+.presentation img{
+	max-width: 150px;
 }
 
 .biographie {
@@ -73,6 +78,10 @@ a {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
+	.container {
+		padding:0!important;
+	}
 }
 /* ################################################################################### */
 /* 
@@ -83,7 +92,7 @@ header {
 	background-color: rgba(178, 11, 0);
 	background: linear-gradient(rgba(135, 8, 0,0.8), rgba(135, 8, 0,0.9));
 	border-bottom: 1px solid rgba(135, 8, 0, 1);
-	height: 150px;
+	min-height: 150px;
 }
 
 .title {
@@ -91,9 +100,25 @@ header {
 	font-family: 'Ma Shan Zheng', cursive;
 }
 
+.title h1 a:hover {
+	text-decoration: none;
+	color:white;
+}
+
+.title h1 a {
+	text-decoration: none;
+	color:white;
+}
+
 .title h1 {
 	margin-left: 5%;
 	font-family: 'Ma Shan Zheng', cursive;
+}
+
+.header-global {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 /* ################################################################################### */
 /* 
@@ -113,11 +138,13 @@ header {
 	display:inline-block;
 	margin-left: 5px;
 	font-size: 0.8em;
+	text-decoration: none;
 }
 
 .menu a:hover {
 	border-bottom: 2px solid white;
 	color:white;
+	text-decoration: none;
 }
 /* ################################################################################### */
 /* 
@@ -140,6 +167,11 @@ header {
 	width:100%;
 	text-align: center;
 }
+
+.addComment {
+	max-width: 100%;
+	text-align: center;
+}
 /* ################################################################################### */
 /* 
 	-- POST-LIST -- 
@@ -148,9 +180,9 @@ header {
 	width:98%;
 	margin: 1% auto;
 	padding:1%;
-	background: linear-gradient(rgba(221, 71, 69),rgba(200, 66, 64));
+	background-color: rgb(221, 71, 69);
 	font-family: 'Patrick Hand', cursive;
-	border: 1px solid rgba(221, 60, 50);
+	border: 1px solid rgb(221, 60, 50);
 	overflow: hidden;
 }
 
@@ -172,6 +204,7 @@ header {
 
 .confirm {
 	min-height: 600px;
+	text-align: center;
 }
 
 .lien-footer {
@@ -185,9 +218,25 @@ header {
 .error {
 	display:block;
 	padding:0,5%;
+	text-align: center;
 }
 
 .footer-error {
 	position: absolute;
 	bottom:0;
+}
+/* ################################################################################### */
+/* 
+	-- ADMIN -- 
+*/
+#signaled-comment-admin .comment a {
+	text-decoration:none; 
+}
+
+#signaled-comment-admin .comment .del {
+	color:red;
+}
+
+#signaled-comment-admin .comment .res {
+	color:blue;
 }

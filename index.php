@@ -30,7 +30,7 @@
                                 throw new Exception('Erreur : tous les champs ne sont pas remplis !');
                             }
                         } else {
-                            require('view/login-view.php');
+                            openLogin();
                         }
                     }
                 }
@@ -47,7 +47,7 @@
                                 throw new Exception('Erreur : tous les champs ne sont pas remplis a!');
                             }
                         } else {
-                            require('view/subscribe-view.php');
+                            openSubscribe();
                         }
                     }
                 }
@@ -134,6 +134,6 @@
         }
     } catch(Exception $e) {
         $errorMessage = $e->getMessage();
-        require('view/error-view.php');
+        openErrorView();
     }
 ?>

@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
-<center><h3>INSCRIPTION</h3></center>
-	<section id="subscribe" class="row justify-content-md-center">
+<center><h2>INSCRIPTION</h2></center>
+	<section id="subscribe" class="sub-content justify-content-md-center">
 		<div class="subscribe">
 			<form action="index.php?action=subscribe&verify" method="post" class="subscribe">
 				<div class="subscribe">

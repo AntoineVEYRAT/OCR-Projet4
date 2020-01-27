@@ -190,4 +190,19 @@
 	    	header('Location: index.php?action=admin');
 	    }
 	}
+
+	// OPEN LOGIN
+	function openLogin() {
+		require('view/login-view.php');
+	}
+
+	// OPEN SUBSCRIBE
+	function openSubscribe() {
+		require('view/subscribe-view.php');
+	}
+
+	// OPEN SUBSCRIBE
+	function openErrorView() {
+		require('view/error-view.php');
+	}
 ?>

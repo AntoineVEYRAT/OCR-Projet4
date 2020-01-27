@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8">
 		<title>Erreur</title>
@@ -20,50 +20,50 @@
 	</head>
 	<body>
 	<div class="container">
-		<header class="row vertical-align">
+		<header class="header-glogal vertical-align">
 			<div class="title col-lg-8">
-				<h1><a href="index.php" style="text-decoration:none; color:white;">Billet simple pour l'Alaska</a></h1>
+				<h1><a href="index.php">Billet simple pour l'Alaska</a></h1>
 			</div>
 			<div class="menu col-lg-4">
 				<?php 
 					if(isset($_SESSION['id'])) {
 						if ($_SESSION['status'] == true) {
 							echo '<p>Bienvenue, ' . $_SESSION['name'] . ' !</p>
-							<a href="index.php" class="white" style="text-decoration:none;"><i class="fas fa-home"></i>Home</a>
-							<a href="index.php?action=admin" class="white" style="text-decoration:none;">Administration</a>
-							<a href="index.php?action=logout" class="white" style="text-decoration:none;">Déconnexion</a>';
+							<a href="index.php" class="white"><i class="fas fa-home"></i>Home</a>
+							<a href="index.php?action=admin" class="white">Administration</a>
+							<a href="index.php?action=logout" class="white">Déconnexion</a>';
 						} else {
 							echo '<p>Bienvenue, ' . $_SESSION['name'] . ' !</p>
-							<a href="index.php" class="white" style="text-decoration:none;"><i class="fas fa-home"></i>Home</a>
-							<a href="index.php?action=logout" class="white" style="text-decoration:none;">Déconnexion</a>';
+							<a href="index.php" class="white"><i class="fas fa-home"></i>Home</a>
+							<a href="index.php?action=logout" class="white">Déconnexion</a>';
 						}
 					} else {
 						echo 
-							'<a href="index.php" class="white" style="text-decoration:none;"><i class="fas fa-home"></i>Home</a>
-							<a href="index.php?action=subscribe" class="white" style="text-decoration:none;">Inscription</a>
-							<a href="index.php?action=login" class="white" style="text-decoration:none;">Connexion</a>';
+							'<a href="index.php" class="white"><i class="fas fa-home"></i>Home</a>
+							<a href="index.php?action=subscribe" class="white">Inscription</a>
+							<a href="index.php?action=login" class="white">Connexion</a>';
 					}
 				?>
 			</div>
 		</header>
 		<body>
-			<div class="error row justify-content-md-center" style="text-align:center;">
-				<h3>Oups, Une erreur s'est produite !</h3>
+			<div class="error justify-content-md-center">
+				<h2>Oups, Une erreur s'est produite !</h2>
 				<br>
-				<h4>
+				<h3>
 				<?php
 					if (($errorMessage === 'Erreur : Mauvais identifiant et/ou mot de passe !') || ($errorMessage ==='Erreur : Mot de passe erroné !')) {
 						echo $errorMessage;
-						echo '</h4><br><a href="index.php?action=login">Réessayer</a>';
+						echo '</h3><br><a href="index.php?action=login">Réessayer</a>';
 					} else {
 						echo $errorMessage;
-						echo '</h4><br><a href="index.php"> Retourner à l\'accueil</a>';
+						echo '</h3><br><a href="index.php"> Retourner à l\'accueil</a>';
 					}
 				?>
 			</div>
-			<footer class="row justify-content-md-center">
+			<footer class="footer-content justify-content-md-center">
 				<div class="footer-error text-center">
-					<p>©️2019 -</p><a href="index.php" style="color:rgba(178, 11, 0); text-decoration: none;"/>Billet simple pour l'Alaska</a><p>- Tous les droits réservés</p>
+					<p>©️2019 -</p><a href="index.php" class="lien-footer">Billet simple pour l'Alaska</a><p>- Tous les droits réservés</p>
 				</div>
 			</footer>
 		</body>

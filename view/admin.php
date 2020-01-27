@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
-<section id="post-content-admin" class="row justify-content-md-center">
-	<h3>ADMINISTRATION</h3>
+<section id="post-content-admin" class="post-admin-content justify-content-md-center">
+	<h2>ADMINISTRATION</h2>
 	<?php
 		foreach ($posts as $post) {
 			$title = $post['title'];
@@ -21,7 +21,7 @@
 </section>
 <hr>
 <section id="make-new-post" class="coll-sm-12 justify-content-md-center">
-	<h3>Ajouter un chapitre</h3><br>
+	<h2>Ajouter un chapitre</h2><br>
 	<form action="index.php?action=admin&add" method="post" class="form-post">
 		<div class="form-post">
 			<label for="new_title_post">TITRE :</label>
@@ -43,7 +43,7 @@
 </section>
 <hr>
 <section id="signaled-comment-admin" class="coll justify-content-md-center">	
-	<h3>Modération des commentaires</h3><br>
+	<h2>Modération des commentaires</h2><br>
 	<?php
 		foreach ($comments as $comment) {     
 		 	$text = $comment['text_com'];
@@ -53,8 +53,8 @@
 		        '<div class="comment">
 		        	<h6>' . $member . '</h6>
 		        	<p>' . $text . '</p>
-		        	<a href="index.php?action=admin&commentDelete&id=' . $id_com . '" style="text-decoration:none; color:red;">Supprimer</a>
-		        	<a href="index.php?action=admin&commentReset&id=' . $id_com . '" style="text-decoration:none; color:blue;">Retirer le signalement</a>
+		        	<a href="index.php?action=admin&commentDelete&id=' . $id_com . '" class="del">Supprimer</a>
+		        	<a href="index.php?action=admin&commentReset&id=' . $id_com . '" class="res">Retirer le signalement</a>
 		        </div>'
 		    ;
 		}

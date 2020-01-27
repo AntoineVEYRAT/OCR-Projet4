@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
-<center><h3>CONNEXION</h3></center>
-<section id="login" class="row justify-content-md-center">
+<center><h2>CONNEXION</h2></center>
+<section id="login" class="login-content justify-content-md-center">
 	<div class="login">
 		<form action="index.php?action=login&amp;verify" method="post" class="login">
 			<div class="login">
