@@ -202,7 +202,8 @@
 	}
 
 	// OPEN SUBSCRIBE
-	function openErrorView() {
+	function openErrorView($error) {
+		$errorMessage = $error;
 		require('view/error-view.php');
 	}
 ?>

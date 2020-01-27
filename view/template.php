@@ -19,12 +19,12 @@
 		<link rel="stylesheet" href="../public/css/style.css">
 	</head>
 	<body>
-	<div class="container">
-		<?php 
-			include("header.php"); 
-			echo $content;
-			include("footer.php"); 
-		?>
-	</div>
+		<div class="container">
+			<?php 
+				include("header.php"); 
+				echo $content;
+				include("footer.php"); 
+			?>
+		</div>
 	</body>
 </html>

@@ -1,8 +1,8 @@
 <?php ob_start(); ?>
-<center><h2>INSCRIPTION</h2></center>
 	<section id="subscribe" class="sub-content justify-content-md-center">
+		<h2>INSCRIPTION</h2>
 		<div class="subscribe">
-			<form action="index.php?action=subscribe&verify" method="post" class="subscribe">
+			<form action="index.php?action=subscribe&verify" method="post" class="subscribe-gbl">
 				<div class="subscribe">
 					<label for="subscribe_name">Identifiant</label>
 					<input type="text" name="subscribe_name" id="subscribe_name" required>

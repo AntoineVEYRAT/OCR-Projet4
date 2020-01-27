@@ -1,8 +1,8 @@
 <?php ob_start(); ?>
-<center><h2>CONNEXION</h2></center>
 <section id="login" class="login-content justify-content-md-center">
+	<h2>CONNEXION</h2>
 	<div class="login">
-		<form action="index.php?action=login&amp;verify" method="post" class="login">
+		<form action="index.php?action=login&amp;verify" method="post" class="login-gbl">
 			<div class="login">
 				<label for="login_name">Identifiant</label>
 				<input type="text" name="login_name" id="login_name" required>

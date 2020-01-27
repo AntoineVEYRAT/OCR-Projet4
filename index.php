@@ -134,6 +134,6 @@
         }
     } catch(Exception $e) {
         $errorMessage = $e->getMessage();
-        openErrorView();
+        openErrorView($errorMessage);
     }
 ?>

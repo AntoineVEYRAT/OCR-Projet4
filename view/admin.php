@@ -21,7 +21,8 @@
 </section>
 <hr>
 <section id="make-new-post" class="coll-sm-12 justify-content-md-center">
-	<h2>Ajouter un chapitre</h2><br>
+	<h2>Ajouter un chapitre</h2>
+	<br>
 	<form action="index.php?action=admin&add" method="post" class="form-post">
 		<div class="form-post">
 			<label for="new_title_post">TITRE :</label>

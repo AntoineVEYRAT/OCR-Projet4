@@ -217,13 +217,35 @@ header {
 */
 .error {
 	display:block;
-	padding:0,5%;
+	padding:5%;
 	text-align: center;
 }
 
 .footer-error {
 	position: absolute;
 	bottom:0;
+}
+/* ################################################################################### */
+/* 
+	-- ALOGIN -- 
+*/
+#login, #subscribe {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-gbl, .subscribe-gbl {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.login, .subscribe {
+	display:flex;
+	align-items: center;
+	justify-content: center;
 }
 /* ################################################################################### */
 /* 

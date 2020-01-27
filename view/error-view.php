@@ -46,7 +46,6 @@
 				?>
 			</div>
 		</header>
-		<body>
 			<div class="error justify-content-md-center">
 				<h2>Oups, Une erreur s'est produite !</h2>
 				<br>
@@ -54,10 +53,16 @@
 				<?php
 					if (($errorMessage === 'Erreur : Mauvais identifiant et/ou mot de passe !') || ($errorMessage ==='Erreur : Mot de passe erroné !')) {
 						echo $errorMessage;
-						echo '</h3><br><a href="index.php?action=login">Réessayer</a>';
+						?>
+							</h3>
+						<?php
+						echo '<br><a href="index.php?action=login">Réessayer</a>';
 					} else {
 						echo $errorMessage;
-						echo '</h3><br><a href="index.php"> Retourner à l\'accueil</a>';
+						?>
+							</h3>
+						<?php
+						echo '<br><a href="index.php"> Retourner à l\'accueil</a>';
 					}
 				?>
 			</div>
@@ -66,6 +71,6 @@
 					<p>©️2019 -</p><a href="index.php" class="lien-footer">Billet simple pour l'Alaska</a><p>- Tous les droits réservés</p>
 				</div>
 			</footer>
-		</body>
-	</div>
+		</div>
+	</body>
 </html>
